@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="formular.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+
+<body>
+    <div class="form-container">
+
+        <div class="form-head">
+            <p>Form</p>
+        </div>
+
+        <div class="form-body">
+            <form id="form" action="result.html" method="GET" autocomplete="off">
+
+                <div class="username form-item">
+                    <label> First Name </label>
+                    <input type="text" id="firstname" data-required="1">
+                    <br>
+                    <p id="firstNameError" class="error hide"> First name must be completed!</p>
+                    
+                    <label> Last Name </label>
+                    <input type="text" id="lastname" name="lastname" data-required="1">
+                    <p  id="lastNameError" class="error hide">Last Name must be completed!</p>
+                </div>
+
+                <div class="radio form-item">
+                    <label>
+                        <p>Radio buttons</p>
+                    </label>
+                    <div class="radio-content" id="radio">
+                        <input id="male" class="sex" type="radio" name="radiobuttons" value="M" data-required="1"> Male
+                        <input id="female" class="sex" type="radio" name="radiobuttons" value="F"> Female
+                        <p id="radioValid" class="error hide">Gender must be completed!</p>
+                    </div>
+                </div>
+
+                <div class="birth-date form-item"> <!--regex-->
+                    <label>Birth date</label>
+                    <br>
+                    <input type="text" id="birthdate" name="birthdate" placeholder=" mm/dd/yyy" data-required="1">
+                    <p id="birthdateerror" class="error hide">Birth date must be completed!</p>
+                </div>
+
+                <div class="role form-item">
+                    <label> Role </label>
+                    <br>
+                    <select name="role" id="role"> <!--trebuie sa fiu sigur ca este selectat din lista. Trebuie facut un array de stringuri si sa le verific-->
+                        <option id="emptyOption" style="display:none"></option>
+                        <option id="continut" value="continut">Niste continut de test</option>
+                        <option id="continut1" value="continut1">Niste continut de test 1</option>
+                        <option id="continut2" value="continut2">Niste continut de test 2</option>
+                        <option id="continut3" value="continut3">Niste continut de test 3</option>
+                        <option id="continut4" value="continut4">Niste continut de test 4</option>
+                        <option id="continut5" value="continut5">Niste continut de test 5</option>
+                    </select>
+                    <i class="fas fa-sort"></i>
+                    <p id="selectederror"class="error hide">You have to chose one option!</p>
+                </div>
+
+                <div id="drop" class="upload form-item" draggable="true">
+                    <label> Upload an profile image</label>
+                    <br><br>
+                    <textarea readonly name="upload" id="upload preview"></textarea>
+                    <div class="inside-textarea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="upload-here">Click to select or drag and drop a file here</p>
+                    </div>
+                    <div class="error bar-fill hide"></div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="form-footer">
+            <div class="base-line"></div>
+            <div class="button">
+                <div class="button-cancel">
+                    <p> Cancel</p>
+                </div>
+                <a href="#" id="save">
+                    <p>Save</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="formular.js"></script>
+</body>
+
+</html>

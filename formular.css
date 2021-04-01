@@ -1,0 +1,226 @@
+.form-container {
+    position: absolute;
+    width: 600px;
+    height: 900px;
+    border: 2px solid lightgray;
+}
+
+.form-head {
+    position: absolute;
+    background-color: lightskyblue;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid lightgray;
+}
+
+.form-head>p {
+    position: relative;
+    margin: 5%;
+    color: blue;
+}
+
+.form-body {
+    position: absolute;
+    width: 100%;
+}
+
+.username {
+    position: relative;
+    width: 92%;
+    top: 85px;
+    float: left;
+    margin: 3%;
+}
+
+.username>input {
+    position: relative;
+    width: 100%;
+    border: 2px solid lightgray;
+    height: 25px;
+    top: 5px;
+}
+
+.radio {
+    position: absolute;
+    top: 250px;
+    margin: 3%;
+}
+
+.radio label:first-child {
+    font-size: x-large;
+}
+
+.radio-content {
+  
+    position: relative;
+    bottom: 20px;
+}
+
+.radio-contet .error:last-child {
+    right: 20px;
+}
+
+.radio>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.birth-date {
+    position: absolute;
+    top: 375px;
+    margin: 3%;
+}
+
+.birth-date>input {
+    position: relative;
+    width: 550px;
+    border: 2px solid lightgray;
+    height: 25px;
+}
+
+.role {
+    position: absolute;
+    top: 470px;
+    margin: 3%;
+    font-size: x-large;
+}
+
+.role>select {
+    position: relative;
+    width: 555px;
+    border: 2px solid lightgray;
+    height: 30px;
+    top: 5px;
+    -webkit-appearance: none;
+}
+
+.fa-sort {
+    float: right;
+    position: relative;
+    top: 15px;
+    font-size: small;
+    right: 15px;
+}
+
+.upload {
+    position: absolute;
+    top: 580px;
+    margin: 3%;
+}
+
+.bar-fill{
+    display: block;
+    height: 10px;
+    width: 0px;
+    background: cornflowerblue;
+    -webkit-transition:width 0.8 ease;
+    transition: 0.8s ease;
+}
+
+.upload>.error {
+    bottom: -5px;
+}
+
+.fa-cloud-upload-alt {
+    position: absolute;
+    text-align: center;
+    font-size: xxx-large;
+    color: blue;
+    width: 100%;
+    top: 15px;
+}
+
+textarea {
+    width: 550px;
+    height: 88px;
+    resize: none;
+    text-align: center;
+    top: 50px;
+}
+
+.inside-textarea {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    top: 30px;
+}
+
+.inside-textarea>p {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    color: blue;
+}
+
+.base-line {
+    position: absolute;
+    width: 550px;
+    height: 2px;
+    background-color: lightgray;
+}
+
+.form-footer {
+    position: absolute;
+    top: 750px;
+}
+
+.base-line {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+.button {
+    position: relative;
+    float: right;
+    width: 100%;
+    top: 30px;
+    left: 535px;
+}
+
+.button-cancel {
+    position: absolute;
+    right: 50px;
+}
+
+#save {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background-color: blue;
+    top: 10px;
+    right: -35px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a>p {
+    position: relative;
+    bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: medium;
+    position: relative;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#styleFN{
+    border: 2px solid black;
+    width: 100%;
+    height: 20px;
+}
